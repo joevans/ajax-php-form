@@ -29,7 +29,7 @@ require_once('content.php');
 		</section>
 		<section class="github">
 			<h3>Code on GitHub 
-				<a href="https://github.com/adamaoc/ajax-php-form">
+				<a href="https://github.com/adamaoc/ajax-php-form" target="_blank">
 					HERE &raquo;
 					<img src="GitHub-Mark.png" alt="github logo" />
 				</a>
