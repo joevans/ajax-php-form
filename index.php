@@ -37,6 +37,6 @@ require_once('content.php');
 		</section>
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="main.js"></script>
+		<script src="../ajax-php-form/main.js"></script>
 	</body>
 </html>
