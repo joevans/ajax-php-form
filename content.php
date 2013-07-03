@@ -38,7 +38,11 @@ if (isset($_POST['name'], $_POST['email'], $_POST['message'])) {
 }
 
 function bioBlock($name, $email, $bio) {
-	echo "<h1>Hi my name is <span style='text-transform:capitalize;'>".$name."</span></h1>";
+	echo "<h1>Hi my name is <span>".$name."</span></h1>";
 	echo "<h3>You can contact me at <a href='mailto:".$email."'>".$email."</a>";
 	echo "<h2>Bio:</h2><p>".$bio."</p>";
+}
+
+function getOnce($echo){
+	echo $echo;
 }

@@ -15,12 +15,12 @@ require_once('content.php');
 		<section>
 			<p><a href="#" class="edit-form">Edit info &raquo;</a></p>
 			<form action="content.php" method="post" class="ajax" style="display: none;">
-				<input name="name" type="text" placeholder="Enter Name" />
-				<input name="email" type="text" placeholder="Enter E-Mail" />
-				<textarea name="message" placeholder="Enter Bio"></textarea>
+				<input name="name" type="text" placeholder="<?php getOnce($ourBio->name) ?>" />
+				<input name="email" type="text" placeholder="<?php getOnce($ourBio->email) ?>" />
+				<textarea name="message"  placeholder="<?php getOnce($ourBio->bio) ?>"></textarea>
 				<input type="submit" value="Update!" class="submit" />
 			</form>
-
+            
 			<div class="responses">
 				<?php
 					bioBlock($ourBio->name, $ourBio->email, $ourBio->bio);

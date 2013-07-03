@@ -128,6 +128,8 @@ h1 {
     margin: 0.67em 0;
 }
 
+h1 span{text-transform:capitalize;}
+
 h2 {
     font-size: 1.5em;
     margin: 0.83em 0;
