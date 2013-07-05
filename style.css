@@ -616,6 +616,11 @@ header, section, footer {
 h1, h2, h3, h4, h5 {
     font-weight: normal;
 }
+
+.name {
+    text-transform: capitalize;
+}
+
 h2 {
     color: #36bbce;
     margin-bottom: 5px;
@@ -657,6 +662,10 @@ textarea {
 .github img {
     width: 100px;
     height: auto;
+}
+
+.github h3 {
+    font-size: 80%;
 }
 /* ==========================================================================
    Media Queries

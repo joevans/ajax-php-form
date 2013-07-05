@@ -1,6 +1,6 @@
 <?php
 
-	$file = file_get_contents('customer.json');
+	$file = file_get_contents('../ajax-php-form/customer.json');
 	$file = json_decode($file);
 
 class Bio {
@@ -28,7 +28,7 @@ if (isset($_POST['name'], $_POST['email'], $_POST['message'])) {
 	$ourBio->bio	= $json['customer']['message'];
 
 	$data = json_encode($json);
-	file_put_contents('customer.json', $data);
+	file_put_contents('../ajax-php-form/customer.json', $data);
 	bioBlock($ourBio->name, $ourBio->email, $ourBio->bio);
 } else {
 	$ourBio = new Bio;
@@ -38,7 +38,11 @@ if (isset($_POST['name'], $_POST['email'], $_POST['message'])) {
 }
 
 function bioBlock($name, $email, $bio) {
+<<<<<<< HEAD
 	echo "<h1>Hi my name is <span>".$name."</span></h1>";
+=======
+	echo "<h1>Hi my name is <span class='name'>".$name."</span></h1>";
+>>>>>>> upstream/master
 	echo "<h3>You can contact me at <a href='mailto:".$email."'>".$email."</a>";
 	echo "<h2>Bio:</h2><p>".$bio."</p>";
 }

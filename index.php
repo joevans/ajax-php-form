@@ -9,15 +9,22 @@ require_once('content.php');
 		<title>AJAX Form</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="../ajax-php-form/style.css" />
 	</head>
 	<body>
 		<section>
 			<p><a href="#" class="edit-form">Edit info &raquo;</a></p>
+<<<<<<< HEAD
 			<form action="content.php" method="post" class="ajax" style="display: none;">
 				<input name="name" type="text" placeholder="<?php getOnce($ourBio->name) ?>" />
 				<input name="email" type="text" placeholder="<?php getOnce($ourBio->email) ?>" />
 				<textarea name="message"  placeholder="<?php getOnce($ourBio->bio) ?>"></textarea>
+=======
+			<form action="../ajax-php-form/content.php" method="post" class="ajax" style="display: none;">
+				<input name="name" type="text" placeholder="Enter Name" />
+				<input name="email" type="text" placeholder="Enter E-Mail" />
+				<textarea name="message" placeholder="Enter Bio"></textarea>
+>>>>>>> upstream/master
 				<input type="submit" value="Update!" class="submit" />
 			</form>
             
@@ -31,12 +38,12 @@ require_once('content.php');
 			<h3>Code on GitHub 
 				<a href="https://github.com/adamaoc/ajax-php-form" target="_blank">
 					HERE &raquo;
-					<img src="GitHub-Mark.png" alt="github logo" />
+					<img src="../ajax-php-form/GitHub-Mark.png" alt="github logo" />
 				</a>
 			</h3>
 		</section>
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="main.js"></script>
+		<script src="../ajax-php-form/main.js"></script>
 	</body>
 </html>
